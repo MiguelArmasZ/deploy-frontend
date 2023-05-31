@@ -5,7 +5,7 @@ export const App = () => {
   useEffect(() => {
     console.log(import.meta.env.VITE_BACKEND_URL);
     async function callApi() {
-      const url = `https://deploy-example-juzk.onrender.com/api`;
+      const url = `${import.meta.env.VITE_BACKEND_URL}/api`;
 
       fetch(url)
         .then((res) => res.json())
