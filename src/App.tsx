@@ -4,7 +4,7 @@ export const App = () => {
   const [deporte, setDeporte] = useState({ deporte: "", nivel: "6" });
   useEffect(() => {
     async function callApi() {
-      const url = `${import.meta.env.VITE_BACKEND_URL}/api`;
+      const url = `https://deploy-example-juzk.onrender.com/api`;
 
       fetch(url)
         .then((res) => res.json())
