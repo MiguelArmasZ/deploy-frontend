@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 export const App = () => {
   const [deporte, setDeporte] = useState({ deporte: "", nivel: "6" });
   useEffect(() => {
+    console.log(import.meta.env.VITE_BACKEND_URL);
     async function callApi() {
       const url = `https://deploy-example-juzk.onrender.com/api`;
 
